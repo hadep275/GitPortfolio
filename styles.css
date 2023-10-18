@@ -1,0 +1,59 @@
+/* Apply your own styling here */
+
+/* Navbar styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Welcome section styles */
+#welcome-section {
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Projects section styles */
+#projects {
+    padding: 20px;
+}
+
+.project-tile {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    /* Your responsive CSS rules go here */
+}
+
+#scroll-down-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#scroll-down-button:hover {
+    background-color: #0056b3;
+}
