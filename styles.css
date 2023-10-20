@@ -54,41 +54,6 @@ body.dark-mode {
     margin: 10px;
 }
 
-/* Media Query for responsiveness */
-@media (max-width: 768px) {
-    /* Your responsive CSS rules go here */
-}
-
-#scroll-down-button {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#scroll-down-button:hover {
-    background-color: #0056b3;
-}
-
-#scroll-down-button {
-    position: fixed;
-    right: 20px; /* Adjust the right position as needed */
-    bottom: 20px; /* Adjust the bottom position as needed */
-    cursor: pointer;
-}
-
-.arrow-down {
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #007bff; /* Arrow color */
-}
 
 
 /* Contact Form Styles */
@@ -144,4 +109,43 @@ body.dark-mode {
 #contact-form .error-message {
     color: #ff0000;
     font-weight: bold;
+}
+
+
+
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    /* Your responsive CSS rules go here */
+}
+
+#scroll-down-button {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#scroll-down-button:hover {
+    background-color: #0056b3;
+}
+
+#scroll-down-button {
+    position: fixed;
+    right: 20px; /* Adjust the right position as needed */
+    bottom: 20px; /* Adjust the bottom position as needed */
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #007bff; /* Arrow color */
 }
