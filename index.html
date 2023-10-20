@@ -7,7 +7,8 @@
     <title>Your Portfolio</title>
 </head>
 <body>
-    <a id="scroll-down-button" href="#about-section">Scroll Down</a>
+    <a id="scroll-down-button" href="#about-section">
+        <span class="arrow-down">Scroll</span></a>
     <nav id="navbar">
         <a href="#welcome-section">Home</a>
         <a href="#about-section">About</a>
@@ -50,10 +51,18 @@
 
     <section id="contact-section">
         <h2>Contact Me</h2>
-        <p>
-            You can reach out to me via email at <a href="mailto:your@email.com">your@email.com</a>. Feel free to connect with me on social media as well:
-        </p>
-        <!-- Add social media links or contact details here -->
+        <form id="contact-form" method="post" action="process_form.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <section id="blog-section">

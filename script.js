@@ -1,3 +1,20 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const modeToggle = document.getElementById("mode-toggle");
+    const body = document.body;
+
+    modeToggle.addEventListener("click", function () {
+        body.classList.toggle("light-mode");
+        body.classList.toggle("dark-mode");
+        // Toggle between moon and sun emojis
+        if (body.classList.contains("dark-mode")) {
+            modeToggle.textContent = "🌝";
+        } else {
+            modeToggle.textContent = "🌞";
+        }
+    });
+});
+
+
 // Wait for the DOM to fully load
 document.addEventListener("DOMContentLoaded", function () {
 

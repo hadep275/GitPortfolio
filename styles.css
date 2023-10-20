@@ -1,4 +1,21 @@
-/* Apply your own styling here */
+/* Background Gradient */
+body {
+    background: linear-gradient(to bottom, #f2f2f2, #ccc); /* Adjust colors as needed */
+    font-family: 'Arial', sans-serif; /* Customize the font */
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
 
 /* Navbar styles */
 #navbar {
@@ -56,4 +73,75 @@
 
 #scroll-down-button:hover {
     background-color: #0056b3;
+}
+
+#scroll-down-button {
+    position: fixed;
+    right: 20px; /* Adjust the right position as needed */
+    bottom: 20px; /* Adjust the bottom position as needed */
+    cursor: pointer;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #007bff; /* Arrow color */
+}
+
+
+/* Contact Form Styles */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #f9f9f9;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contact-form textarea {
+    height: 100px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#contact-form .success-message {
+    color: #00a000;
+    font-weight: bold;
+}
+
+#contact-form .error-message {
+    color: #ff0000;
+    font-weight: bold;
 }
