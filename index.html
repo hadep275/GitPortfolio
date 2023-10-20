@@ -4,70 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> 
-    <title>Your Portfolio</title>
+    <title>Your portfolio</title>
 </head>
 <body>
+    
     <a id="scroll-down-button" href="#about-section">
         <span class="arrow-down">Scroll</span></a>
     <nav id="navbar">
         <a href="#welcome-section">Home</a>
         <a href="#about-section">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#skill-section">Skills</a>
+        <a href="#projects-section">Projects</a>
         <a href="#contact-section">Contact</a>
         <a href="#blog-section">Blog</a>
+        <button id="mode-toggle">🌙</button>
     </nav>
 
     <section id="welcome-section">
-        <h1>Welcome to My Portfolio</h1>
+        <h1>Welcome to My project</h1>
     </section>
 
     <section id="about-section">
         <h2>About Me</h2>
-        <p>
-            I'm a passionate web developer with a strong love for coding. I enjoy creating web applications and designing interactive user experiences. My skills include HTML, CSS, JavaScript, and various web development frameworks. When I'm not coding, you can find me exploring the great outdoors or reading a good book.
-        </p>
+        <div class="about-content">
+            <div class="about-left">
+                <img src="your-headshot.jpg" alt="Your Headshot">
+                <div class="about-links">
+                    <a href="https://github.com/YourGitHubUsername" target="_blank">
+                        <img src="github-logo.png" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank">
+                        <img src="linkedin-logo.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+            <div class="about-right">
+                <p>
+                    I'm a passionate web developer with a strong love for coding. I enjoy creating web applications and designing interactive user experiences. My skills include HTML, CSS, JavaScript, and various web development frameworks. When I'm not coding, you can find me exploring the great outdoors or reading a good book.
+                </p>
+            </div>
+        </div>
     </section>
+    
     <section id="skill-section">
         <h2>Skills</h2>
-        <p>
-            I'm a passionate web developer with a strong love for coding. I enjoy creating web applications and designing interactive user experiences. My skills include HTML, CSS, JavaScript, and various web development frameworks. When I'm not coding, you can find me exploring the great outdoors or reading a good book.
-        </p>
+    
+        <div class="skills-container">
+            <div class="skill-category" id="front-end">
+                <h3>Front End</h3>
+                <ul>
+                    <li><span class="skill">React.js</span></li>
+                    <li><span class="skill">HTML/CSS</span></li>
+                    <li><span class="skill">JavaScript</span></li>
+                </ul>
+            </div>
+    
+            <div class="skill-category" id="tools">
+                <h3>Tools</h3>
+                <ul>
+                    <li><span class="skill">Git</span></li>
+                    <li><span class="skill">Azure</span></li>
+                    <li><span class="skill">Figma</span></li>
+                    <li><span class="skill">Cognos</span></li>
+                    <li><span class="skill">Agile Methodologies</span></li>
+                    <li><span class="skill">Google Cloud Services</span></li>
+                </ul>
+            </div>
+    
+            <div class="skill-category" id="back-end">
+                <h3>Back End</h3>
+                <ul>
+                    <li><span class="skill">Node.js</span></li>
+                    <li><span class="skill">MongoDB</span></li>
+                    <li><span class="skill">Express.js</span></li>
+                </ul>
+            </div>
+        </div>
     </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-tile">
-            <h3>Project 1: Portfolio Website</h3>
-            <p>
-                This very website you're visiting! It showcases my web development skills and serves as my online portfolio. I built it from scratch using HTML, CSS, and JavaScript.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+    
+    
+    <section id="projects-section">
+        <h2>project</h2>
+    
+        <div class="project-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-details">
+                <h3>Project 1: project Website</h3>
+                <p>This very website you're visiting! It showcases my web development skills and serves as my online project. I built it from scratch using HTML, CSS, and JavaScript.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-
-        <div class="project-tile">
-            <h3>Project 2: E-commerce Website</h3>
-            <p>
-                A fully-featured e-commerce site I developed for a local business. It includes user authentication, product catalog, and a secure payment system. Built with HTML, CSS, JavaScript, and Node.js.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+    
+        <div class="project-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 2: Every child plays</h3>
+                <p>A fully-featured e-commerce site I developed for a local business. It includes user authentication, product catalog, and a secure payment system. Built with HTML, CSS, JavaScript, and Node.js.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-        <div class="project-tile">
-            <h3>Project 3: Portfolio Website</h3>
-            <p>
-                This very website you're visiting! It showcases my web development skills and serves as my online portfolio. I built it from scratch using HTML, CSS, and JavaScript.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+        <div class="project-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="project-details">
+                <h3>Project 3: Indeygo</h3>
+                <p>This very website you're visiting! It showcases my web development skills and serves as my online project. I built it from scratch using HTML, CSS, and JavaScript.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-
-        <div class="project-tile">
-            <h3>Project 4: E-commerce Website</h3>
-            <p>
-                A fully-featured e-commerce site I developed for a local business. It includes user authentication, product catalog, and a secure payment system. Built with HTML, CSS, JavaScript, and Node.js.
-            </p>
-            <a href="#" target="_blank">View Project</a>
+    
+        <div class="project-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="project-details">
+                <h3>Project 4: TBD Website</h3>
+                <p>A fully-featured e-commerce site I developed for a local business. It includes user authentication, product catalog, and a secure payment system. Built with HTML, CSS, JavaScript, and Node.js.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
         </div>
-
-        <!-- project tiles -->
+    
     </section>
 
     <section id="contact-section">
@@ -91,12 +144,10 @@
         <p>
             Check out my latest blog posts for insights into web development, coding tips, and more. Stay updated with my thoughts on the ever-evolving world of technology.
         </p>
-        <!-- links to your blog posts -->
     </section>
 
-    <a id="profile-link" href="https://github.com/YourGitHubUsername" target="_blank">View My GitHub Profile</a>
+    <a id="profile-link" href="https://github.com/hadep275" target="_blank">View My GitHub Profile</a>
     
     <script src="script.js"></script> 
-    <!-- <script src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
 </body>
 </html>

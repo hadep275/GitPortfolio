@@ -2,18 +2,38 @@
 body {
     background: linear-gradient(to bottom, #f2f2f2, #ccc); /* Adjust colors as needed */
     font-family: 'Arial', sans-serif; /* Customize the font */
+    color: #333; /* Default text color */
 }
 
 /* Light Mode */
 body.light-mode {
-    background-color: #f2f2f2;
+    background: linear-gradient(to bottom, #f2f2f2, #ccc); /* Adjust colors as needed */
     color: #333;
 }
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #333;
+    background: linear-gradient(to bottom, #333, #111); /* Dark background */
     color: #fff;
+}
+
+
+/* Light/Dark Mode Toggle Button */
+#mode-toggle {
+    position: fixed;
+    top: 0; /* Position at the top */
+    right: 0; /* Position at the right */
+    z-index: 1000; /* To ensure it's above other content */
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#mode-toggle:hover {
+    background-color: #0056b3;
 }
 
 
@@ -36,32 +56,218 @@ body.dark-mode {
 /* Welcome section styles */
 #welcome-section {
     height: 100vh;
-    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Projects section styles */
-#projects {
+
+/* About Me Section */
+#about-section {
     padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
 }
 
-.project-tile {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
+#about-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left {
+    flex: 1;
+    text-align: center;
+}
+
+.about-left img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.about-links {
+    margin-top: 20px;
+}
+
+.about-links a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.about-right {
+    flex: 2;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.about-right p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.about-links img {
+    width: 30px; /* Adjust the size as needed */
+}
+
+#about-section.light-mode {
+    background-color: #f5f5f5;
+}
+
+#about-section.dark-mode {
+    background-color: #111; /* Customize the background color for dark mode */
+}
+
+/* Skills Section */
+#skill-section {
+    padding: 9px;
+    border-radius: 20px;
+    margin: 2px 0;
+    text-align: center;
+}
+
+#skill-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-category {
+    width: calc(20.33% - 1px); /* 33.33% width with 10px spacing */
     margin: 10px;
+    padding: 80px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill-category h3 {
+    font-size: 80px;
+    color: #5900ff;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.skill {
+    background-color: #f1e6f1;
+    color: #000000;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.skill:hover {
+    background-color: #b4a7be;
+}
+
+#skill-section.light-mode {
+    background-color: #e6e6e6;
+}
+
+#skill-section.dark-mode {
+    background-color: #444; /* Customize the background color for dark mode */
 }
 
 
+/* project Section */
+#project-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#project-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project-item {
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.project-item img {
+    width: 40%;
+    border-radius: 10px 0 0 10px;
+}
+
+.project-details {
+    width: 60%;
+    padding: 20px;
+    text-align: left;
+}
+
+.project-details h3 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.project-details a {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.project-details a:hover {
+    background-color: #0056b3;
+}
+
+#project-section.light-mode {
+    background-color: #f7f7f7;
+}
+
+#project-section.dark-mode {
+    background-color: #222; /* Customize the background color for dark mode */
+}
 
 /* Contact Form Styles */
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     border: 10px solid #ccc;
     border-radius: 5px;
 }
@@ -111,8 +317,48 @@ body.dark-mode {
     font-weight: bold;
 }
 
+/* Blog Section */
+#blog-section {
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+}
 
+#blog-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 
+#blog-section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Profile Link */
+#profile-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#profile-link:hover {
+    background-color: #0056b3;
+}
+
+#blog-section.light-mode {
+    background-color: #f5f5f5;
+}
+#blog-section.dark-mode {
+    background-color: #111; /* Customize the background color for dark mode */
+}
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
@@ -149,3 +395,17 @@ body.dark-mode {
     border-right: 10px solid transparent;
     border-top: 10px solid #007bff; /* Arrow color */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

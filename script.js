@@ -1,16 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
     const modeToggle = document.getElementById("mode-toggle");
     const body = document.body;
+    
+// Check if the user has a preference for light or dark mode
+const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+body.classList.toggle("dark-mode", prefersDarkMode);
 
     modeToggle.addEventListener("click", function () {
         body.classList.toggle("light-mode");
         body.classList.toggle("dark-mode");
         // Toggle between moon and sun emojis
         if (body.classList.contains("dark-mode")) {
-            modeToggle.textContent = "🌝";
+            modeToggle.textContent = "🌞"; // Sun Emoji for light mode
         } else {
-            modeToggle.textContent = "🌞";
-        }
+            modeToggle.textContent = "🌙"; // Crescent Moon Emoji for dark mode
+        } 
     });
 });
 
