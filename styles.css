@@ -60,7 +60,7 @@ body.dark-mode {
 }
 
 h1{
-    font-size: 210px;
+    font-size: 110px;
 }
 
 
@@ -193,10 +193,6 @@ h1{
     text-align: center;
 }
 
-/* #project-section h2 {
-    font-size: 64px;
-    margin-bottom: 20px;
-} */
 
 .project-item {
     border-radius: 10px;
