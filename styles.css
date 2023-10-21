@@ -29,7 +29,7 @@ body.dark-mode {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
 }
 
 
@@ -59,6 +59,10 @@ body.dark-mode {
     align-items: center;
 }
 
+h1{
+    font-size: 210px;
+}
+
 
 /* About Me Section */
 #about-section {
@@ -69,7 +73,6 @@ body.dark-mode {
 }
 
 #about-section h2 {
-    color: #333;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -109,19 +112,10 @@ body.dark-mode {
 .about-right p {
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
 }
 
 .about-links img {
-    width: 30px; /* Adjust the size as needed */
-}
-
-#about-section.light-mode {
-    background-color: #f5f5f5;
-}
-
-#about-section.dark-mode {
-    background-color: #111; /* Customize the background color for dark mode */
+    width: 30px; 
 }
 
 /* Skills Section */
@@ -133,7 +127,6 @@ body.dark-mode {
 }
 
 #skill-section h2 {
-    color: #333;
     font-size: 24px;
     margin-bottom: 2px;
 }
@@ -154,7 +147,6 @@ body.dark-mode {
 
 .skill-category h3 {
     font-size: 80px;
-    color: #5900ff;
 }
 
 .skill-category ul {
@@ -201,11 +193,10 @@ body.dark-mode {
     text-align: center;
 }
 
-#project-section h2 {
-    color: #333;
-    font-size: 24px;
+/* #project-section h2 {
+    font-size: 64px;
     margin-bottom: 20px;
-}
+} */
 
 .project-item {
     border-radius: 10px;
@@ -226,19 +217,17 @@ body.dark-mode {
 }
 
 .project-details h3 {
-    font-size: 20px;
-    color: #007bff;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .project-details p {
     font-size: 16px;
-    color: #666;
     line-height: 1.6;
 }
 
 .project-details a {
-    background-color: #007bff;
+    background-color: #02070c;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -252,20 +241,12 @@ body.dark-mode {
     background-color: #0056b3;
 }
 
-#project-section.light-mode {
-    background-color: #f7f7f7;
-}
-
-#project-section.dark-mode {
-    background-color: #222; /* Customize the background color for dark mode */
-}
 
 /* Contact Form Styles */
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 50px;
-    /* background-color: #f9f9f9; */
     border: 10px solid #ccc;
     border-radius: 5px;
 }
@@ -274,7 +255,6 @@ body.dark-mode {
     display: block;
     margin-top: 10px;
     font-weight: bold;
-    color: #333;
 }
 
 #contact-form input[type="text"],
@@ -292,7 +272,7 @@ body.dark-mode {
 }
 
 #contact-form input[type="submit"] {
-    background-color: #007bff;
+    background-color: #02070c;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -302,7 +282,7 @@ body.dark-mode {
 }
 
 #contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #02070c;
 }
 
 #contact-form .success-message {
@@ -324,21 +304,19 @@ body.dark-mode {
 }
 
 #blog-section h2 {
-    color: #333;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
 #blog-section p {
     font-size: 16px;
-    color: #666;
     line-height: 1.6;
 }
 
 /* Profile Link */
 #profile-link {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #02070c;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -351,12 +329,6 @@ body.dark-mode {
     background-color: #0056b3;
 }
 
-#blog-section.light-mode {
-    background-color: #f5f5f5;
-}
-#blog-section.dark-mode {
-    background-color: #111; /* Customize the background color for dark mode */
-}
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
@@ -368,7 +340,7 @@ body.dark-mode {
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #02070c;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -376,7 +348,7 @@ body.dark-mode {
 }
 
 #scroll-down-button:hover {
-    background-color: #0056b3;
+    background-color: #02070c;
 }
 
 #scroll-down-button {
