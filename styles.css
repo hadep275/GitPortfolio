@@ -62,19 +62,17 @@ body.dark-mode {
 h1{
     font-size: 110px;
 }
+h2{
+    font-size: 50px;
+}
 
 
 /* About Me Section */
 #about-section {
-    padding: 20px;
+    padding: 70px 290px 690px 100px;
     border-radius: 10px;
     margin: 20px 0;
     text-align: center;
-}
-
-#about-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
 }
 
 .about-content {
@@ -126,11 +124,6 @@ h1{
     text-align: center;
 }
 
-#skill-section h2 {
-    font-size: 24px;
-    margin-bottom: 2px;
-}
-
 .skills-container {
     display: flex;
     justify-content: space-between;
@@ -161,7 +154,7 @@ h1{
 }
 
 .skill {
-    background-color: #f1e6f1;
+    background: linear-gradient(to bottom, #f2f2f2, #ccc); 
     color: #000000;
     padding: 5px 15px;
     border-radius: 5px;
@@ -174,14 +167,6 @@ h1{
 
 .skill:hover {
     background-color: #b4a7be;
-}
-
-#skill-section.light-mode {
-    background-color: #e6e6e6;
-}
-
-#skill-section.dark-mode {
-    background-color: #444; /* Customize the background color for dark mode */
 }
 
 
@@ -299,10 +284,6 @@ h1{
     text-align: center;
 }
 
-#blog-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
 #blog-section p {
     font-size: 16px;
