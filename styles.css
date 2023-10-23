@@ -116,6 +116,30 @@ h2{
     width: 30px; 
 }
 
+.about-links a img {
+    width: 30px;
+    height: 30px;
+    color: pink;
+    fill: #FF007F;
+    margin-top: 200px;
+    margin-right: 10px; /* Add spacing between the icons */
+    filter: grayscale(10%) brightness(0.9); /* Adjust brightness as needed */
+}
+
+a.resume-link {
+    background-color: #02070c;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+a.resume-link:hover {
+    background-color: #0056b3;
+}
+
+
 /* Skills Section */
 #skill-section {
     padding: 9px;
