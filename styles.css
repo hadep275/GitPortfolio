@@ -69,7 +69,7 @@ h2{
 
 /* About Me Section */
 #about-section {
-    padding: 210px 290px 400px 100px;
+    padding: 210px 90px 40px 10px;
     border-radius: 10px;
     margin: 20px 0;
     text-align: center;
@@ -108,7 +108,7 @@ h2{
 }
 
 .about-right p {
-    font-size: 16px;
+    font-size: 26px;
     line-height: 1.6;
 }
 
@@ -116,15 +116,14 @@ h2{
     width: 30px; 
 }
 
-.about-links a img {
-    width: 30px;
-    height: 30px;
-    color: pink;
-    fill: #FF007F;
-    margin-top: 200px;
-    margin-right: 10px; /* Add spacing between the icons */
-    filter: grayscale(10%) brightness(0.9); /* Adjust brightness as needed */
+.github-icon {
+    color: #FF007F; 
 }
+
+.linkedin-icon {
+    color: #0077B5; 
+}
+
 
 a.resume-link {
     background-color: #02070c;
@@ -157,7 +156,8 @@ a.resume-link:hover {
 .skill-category {
     width: calc(20.33% - 1px); /* 33.33% width with 10px spacing */
     margin: 10px;
-    padding: 80px;
+    padding: 100px;
+    margin: 10px;
     border-radius: 10px;
     text-align: center;
 }
