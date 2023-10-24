@@ -112,9 +112,10 @@ h2{
 .about-right p {
     font-size: 26px;
     line-height: 1.6;
-    max-width: 90%;
-    padding-left: 100px;
-    justify-content: right;
+    max-width: 100%;
+    padding-left: 10px;
+    justify-content: center;
+    text-align: center;
 }
 
 .about-links img {
