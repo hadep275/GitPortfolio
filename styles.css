@@ -155,13 +155,13 @@ a.resume-link:hover {
 
 .skills-container {
     display: flex;
-    /* justify-content: space-evenly; */
+    /* justify-content: center; */
     flex-wrap: wrap;
 }
 
 .skill-category {
-    width: calc(20.33% - 1px); /* 33.33% width with 10px spacing */
-    margin: 10px;
+    width: calc(33.33% - 1px); /* 33.33% width with 10px spacing */
+    /* margin: 10px; */
     padding: 50px;
     border-radius: 10px;
     text-align: center;
