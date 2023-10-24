@@ -78,8 +78,9 @@ h2{
 .about-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
+    flex-direction: column;
 }
 
 .about-left {
@@ -104,13 +105,16 @@ h2{
 
 .about-right {
     flex: 2;
-    text-align: right;
+    text-align: left;
     padding: 0 5px;
 }
 
 .about-right p {
     font-size: 26px;
     line-height: 1.6;
+    max-width: 90%;
+    padding-left: 100px;
+    justify-content: right;
 }
 
 .about-links img {
@@ -180,7 +184,8 @@ a.resume-link:hover {
 
 .skill {
     background: linear-gradient(to bottom, #f2f2f2, #ccc); 
-    color: #000000;
+    /* color: #000000; */
+    color: #FF007F;
     padding: 5px 15px;
     border-radius: 5px;
     font-size: 40px;
@@ -209,6 +214,7 @@ a.resume-link:hover {
     margin: 20px 0;
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .project-item img {
@@ -222,7 +228,7 @@ a.resume-link:hover {
     text-align: left;
 }
 
-.project-details h3 {
+ h3 {
     font-size: 40px;
     margin-bottom: 10px;
 }
@@ -251,7 +257,12 @@ a.resume-link:hover {
 
 
 /* Contact Form Styles */
+#contact-section h2{
+    text-align: center;
+
+}
 #contact-form {
+    
     max-width: 600px;
     margin: 0 auto;
     padding: 50px;
@@ -260,6 +271,7 @@ a.resume-link:hover {
 }
 
 #contact-form label {
+    
     display: block;
     margin-top: 10px;
     font-weight: bold;
