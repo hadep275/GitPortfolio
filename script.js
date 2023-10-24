@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (response.ok) {
                 // Display a success message
-                successMessage.textContent = 'Thank you for your message!';
+                successMessage.innerHTML = 'Thank you for your message!<br><br>Message sent successfully.';
                 const formContainer = document.getElementById('contact-section');
                 formContainer.innerHTML = ''; // Clear the form
                 formContainer.appendChild(successMessage);
