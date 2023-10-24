@@ -150,12 +150,13 @@ a.resume-link:hover {
 
 /* Skills Section */
 #skill-section {
+    padding-top: 25px;
     border-radius: 20px;
     text-align: center;
 }
 
 .skills-container {
-    padding: 20px 90px 200px 0px;
+    padding: 2px 90px 200px 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -264,6 +265,7 @@ a.resume-link:hover {
 
 /* Contact Form Styles */
 #contact-section h2{
+    padding: 60px 0px 0px 0px;
     text-align: center;
 
 }
