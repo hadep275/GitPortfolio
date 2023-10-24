@@ -73,3 +73,48 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 3000); // Change image every 3 seconds (adjust as needed)
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contact-form');
+    const successMessage = document.createElement('div');
+
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        // Collect the form data
+        const formData = new FormData(contactForm);
+
+        // Handle the form submission
+        try {
+            const response = await fetch('https://formspree.io/f/mdorbzvz', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json',
+                },
+            });
+
+            if (response.ok) {
+                // Display a success message
+                successMessage.textContent = 'Thank you for your message!';
+                const formContainer = document.getElementById('contact-section');
+                formContainer.innerHTML = ''; // Clear the form
+                formContainer.appendChild(successMessage);
+
+                // After a brief delay, reset the form and hide the success message
+                setTimeout(() => {
+                    successMessage.textContent = '';
+                    formContainer.innerHTML = ''; // Clear the success message
+                    contactForm.reset(); // Reset the form fields
+                    formContainer.appendChild(contactForm); // Display the form again
+                }, 1500); // Adjust the delay (in milliseconds) as needed
+            } else {
+                // Display an error message if the form submission fails
+                alert('There was an error submitting your message. Please try again later.');
+            }
+        } catch (error) {
+            console.error('An error occurred:', error);
+        }
+    });
+});
