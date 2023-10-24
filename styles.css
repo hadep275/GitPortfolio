@@ -149,7 +149,7 @@ a.resume-link:hover {
 #skill-section {
     padding: 9px;
     border-radius: 20px;
-    margin: 2px 0;
+    margin: 1px 0;
     text-align: center;
 }
 
@@ -160,15 +160,16 @@ a.resume-link:hover {
 }
 
 .skill-category {
-    width: calc(20.33% - 1px); /* 33.33% width with 10px spacing */
-    margin: 10px;
+    width: calc(29.33% - 1px); /* 33.33% width with 10px spacing */
+    margin: 1px;
     padding-inline: 60px;
     border-radius: 10px;
     text-align: center;
 }
 
 .skill-category h3 {
-    font-size: 80px;
+    font-size: 60px;
+    margin: 0;
 }
 
 .skill-category ul {
@@ -180,17 +181,19 @@ a.resume-link:hover {
     margin: 10px 0;
     display: flex;
     align-items: center;
+    font-size: 30px;
 }
 
 .skill {
     background: linear-gradient(to bottom, #f2f2f2, #ccc); 
     /* color: #000000; */
     color: #FF007F;
-    padding: 5px 15px;
+    padding: 5px 5px;
+    margin-left: 5px;
     border-radius: 5px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
-    margin-right: 10px;
+    margin-right: 1px;
     text-align: center;
     /* transition: background-color 0.3s; */
 }
