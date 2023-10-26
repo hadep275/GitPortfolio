@@ -40,11 +40,11 @@ body.dark-mode {
     background-color: white;
     color: white;
     font-size: 0.5rem;
-    animation: twinkling 2.5s infinite;
+    animation: twinkling 5s infinite;
     /* animation: twinkle 5s infinite; */
-  }
-  
-  @keyframes twinkling {
+}
+
+@keyframes twinkling {
     0%, 60%, 100% {
         opacity: 1;
     }
@@ -60,10 +60,11 @@ body.dark-mode {
     left: 700px; /* Adjust the horizontal position as needed */
     width: 30px; /* Adjust the moon size as needed */
     height: 30px; /* Keep it the same size for a full moon */
+    z-index: -999;
     border-radius: 50%; /* Make it a circle */
     background-color: #f7f5f5; /* Adjust the moon color as needed */
     box-shadow: 0 0 15px 7px #f7f5f5; /* Add a glow around the moon */
-    background: radial-gradient(circle, rgb(118, 104, 104), transparent);
+    background: radial-gradient(circle, rgb(236, 226, 226), transparent);
     animation: explode 60s ease-in-out infinite;
 }
 

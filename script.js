@@ -24,6 +24,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Add stars when dark mode is initially enabled
+    if (body.classList.contains("dark-mode")) {
+        addStars();
+    }
+
     modeToggle.addEventListener("click", function () {
         body.classList.toggle("light-mode");
         body.classList.toggle("dark-mode");
@@ -41,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
 
 
 
@@ -144,21 +150,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Function to add fireworks
-function addFireworks() {
-    const NUMBER_OF_FIREWORKS = 5;
 
-    for (let i = 1; i <= NUMBER_OF_FIREWORKS; i++) {
-        const LIMIT_BOTTOM = window.innerHeight;
-        const LIMIT_RIGHT = window.innerWidth;
-        const positionX = Math.random() * LIMIT_RIGHT;
-        const positionY = Math.random() * LIMIT_BOTTOM;
-        const fireworks = document.createElement('div');
-        fireworks.classList.add('fireworks');
-        fireworks.style.top = `${positionY}px`;
-        fireworks.style.left = `${positionX}px`;
-        document.body.appendChild(fireworks);
+document.addEventListener('DOMContentLoaded', function () {
+    createFireworks();
+});
+
+function createFireworks() {
+    const fireworksContainer = document.getElementById('about-section'); // Adjust the container as needed
+
+    for (let i = 0; i < 10; i++) { // You can change the number of fireworks
+        const firework = document.createElement('div');
+        firework.className = 'firework';
+        firework.style.top = `${getRandomNumber(0, 500)}px`; // Adjust the range as needed
+        firework.style.left = `${getRandomNumber(0, 1000)}px`; // Adjust the range as needed
+        fireworksContainer.appendChild(firework);
     }
 }
 
-// Call addFireworks() when needed (e.g., when dark mode is toggled)
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
