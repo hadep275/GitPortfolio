@@ -53,6 +53,35 @@ body.dark-mode {
     }
 }
 
+.shooting-star {
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    border-radius: 50%;
+    /* background: radial-gradient(circle, #511203, #FFC300); */
+    background: linear-gradient(-2000deg, transparent 20%, rgb(227, 212, 186) 10%, #f9acac 20%, transparent 40%);
+    animation: shooting 5s cubic-bezier(0.45, 0.2, 0.95, 5) infinite;
+}
+
+@keyframes shooting {
+    0% {
+        left: 100%;
+        opacity: 1;
+        transform: scale(0);
+    }
+    50% {
+        left: 40%;
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+    100% {
+        left: -10%;
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+
+
 /* Full Moon */
 .moon {
     position: inherit;
@@ -68,28 +97,7 @@ body.dark-mode {
     animation: explode 60s ease-in-out infinite;
 }
 
-.fireworks {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: radial-gradient(circle, #f00, transparent);
-    animation: explode 2s ease-in-out infinite;
-}
 
-@keyframes explode {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(3);
-        opacity: 0.5;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
 
 
 /* Light/Dark Mode Toggle Button */

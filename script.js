@@ -152,21 +152,40 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    createFireworks();
+    createStarsAndShootingStars();
 });
 
-function createFireworks() {
-    const fireworksContainer = document.getElementById('about-section'); // Adjust the container as needed
+function createStarsAndShootingStars() {
+    const sky = document.querySelector('.sky');
+    const numberOfStars = 100;
+    const numberOfShootingStars = 5; // Adjust as needed
 
-    for (let i = 0; i < 10; i++) { // You can change the number of fireworks
-        const firework = document.createElement('div');
-        firework.className = 'firework';
-        firework.style.top = `${getRandomNumber(0, 500)}px`; // Adjust the range as needed
-        firework.style.left = `${getRandomNumber(0, 1000)}px`; // Adjust the range as needed
-        fireworksContainer.appendChild(firework);
+    for (let i = 0; i < numberOfStars; i++) {
+        createStar(sky);
+    }
+
+    for (let i = 0; i < numberOfShootingStars; i++) {
+        createShootingStar(sky);
     }
 }
 
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function createStar(container) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = getRandomNumber(0, 100) + '%';
+    star.style.left = getRandomNumber(0, 100) + '%';
+    container.appendChild(star);
 }
+
+function createShootingStar(container) {
+    const shootingStar = document.createElement('div');
+    shootingStar.classList.add('shooting-star');
+    shootingStar.style.top = getRandomNumber(10, 40) + '%';
+    shootingStar.style.left = '100%';
+    container.appendChild(shootingStar);
+}
+
+function getRandomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
