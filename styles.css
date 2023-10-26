@@ -13,8 +13,81 @@ body.light-mode {
 
 /* Dark Mode */
 body.dark-mode {
-    background: linear-gradient(to bottom, #333, #111); /* Dark background */
     color: #fff;
+    margin: 0;
+    /* background: black; */
+    
+    
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* background-image: linear-gradient(29deg, rgba(151, 151, 108, 0.2), rgba(231, 225, 212, 0.1), rgba(222, 201, 147, 0.1), rgba(155, 200, 223, 0.08), rgba(124, 138, 207, 0.09), rgba(120, 193, 125, 0.05), rgba(85, 56, 56, 0.3));
+    background-color: rgb(0, 0, 0); */
+
+    background-image: linear-gradient(29deg, rgba(84, 84, 51, 0.2), rgba(92, 77, 36, 0.1), rgba(85, 72, 38, 0.1), rgba(2, 118, 175, 0.08), rgba(32, 37, 63, 0.09), rgba(38, 155, 46, 0.05), rgba(0, 0, 0, 0.3));
+  background-color: rgb(0, 0, 0);
+
+  /* background: $moonColor; */
+}
+  
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: white;
+    color: white;
+    font-size: 0.5rem;
+    animation: twinkling 2.5s infinite;
+    /* animation: twinkle 5s infinite; */
+  }
+  
+  @keyframes twinkling {
+    0%, 60%, 100% {
+        opacity: 1;
+    }
+    5%, 30%, 53%, 70% {
+        opacity: 0.5;
+    }
+}
+
+/* Full Moon */
+.moon {
+    position: inherit;
+    top: 90px; /* Adjust the vertical position as needed */
+    left: 700px; /* Adjust the horizontal position as needed */
+    width: 30px; /* Adjust the moon size as needed */
+    height: 30px; /* Keep it the same size for a full moon */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #f7f5f5; /* Adjust the moon color as needed */
+    box-shadow: 0 0 15px 7px #f7f5f5; /* Add a glow around the moon */
+    background: radial-gradient(circle, rgb(118, 104, 104), transparent);
+    animation: explode 60s ease-in-out infinite;
+}
+
+.fireworks {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(circle, #f00, transparent);
+    animation: explode 2s ease-in-out infinite;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(3);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 

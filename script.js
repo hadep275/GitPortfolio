@@ -1,10 +1,28 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const modeToggle = document.getElementById("mode-toggle");
     const body = document.body;
-    
-// Check if the user has a preference for light or dark mode
-const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-body.classList.toggle("dark-mode", prefersDarkMode);
+    const modeToggle = document.getElementById("mode-toggle");
+    const sky = document.querySelector(".sky");
+
+    // Check if the user has a preference for light or dark mode
+    const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    body.classList.toggle("dark-mode", prefersDarkMode);
+
+    // Function to add stars to the sky
+    function addStars() {
+        const NUMBER_OF_STARS = 100;
+
+        for (let i = 1; i <= NUMBER_OF_STARS; i++) {
+            const LIMIT_BOTTOM = window.innerHeight;
+            const LIMIT_RIGHT = window.innerWidth;
+            const positionX = Math.random() * LIMIT_RIGHT;
+            const positionY = Math.random() * LIMIT_BOTTOM;
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = `${positionY}px`;
+            star.style.left = `${positionX}px`;
+            sky.appendChild(star);
+        }
+    }
 
     modeToggle.addEventListener("click", function () {
         body.classList.toggle("light-mode");
@@ -12,11 +30,18 @@ body.classList.toggle("dark-mode", prefersDarkMode);
         // Toggle between moon and sun emojis
         if (body.classList.contains("dark-mode")) {
             modeToggle.textContent = "🌞"; // Sun Emoji for light mode
+            addStars(); // Add stars when switching to dark mode
         } else {
             modeToggle.textContent = "🌙"; // Crescent Moon Emoji for dark mode
-        } 
+            // Remove stars when switching back to light mode
+            const stars = document.querySelectorAll('.star');
+            stars.forEach((star) => {
+                star.remove();
+            });
+        }
     });
 });
+
 
 
 // Wait for the DOM to fully load
@@ -118,3 +143,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Function to add fireworks
+function addFireworks() {
+    const NUMBER_OF_FIREWORKS = 5;
+
+    for (let i = 1; i <= NUMBER_OF_FIREWORKS; i++) {
+        const LIMIT_BOTTOM = window.innerHeight;
+        const LIMIT_RIGHT = window.innerWidth;
+        const positionX = Math.random() * LIMIT_RIGHT;
+        const positionY = Math.random() * LIMIT_BOTTOM;
+        const fireworks = document.createElement('div');
+        fireworks.classList.add('fireworks');
+        fireworks.style.top = `${positionY}px`;
+        fireworks.style.left = `${positionX}px`;
+        document.body.appendChild(fireworks);
+    }
+}
+
+// Call addFireworks() when needed (e.g., when dark mode is toggled)
