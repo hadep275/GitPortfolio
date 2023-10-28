@@ -242,7 +242,7 @@ a.resume-link:hover {
 .skill-category {
     width: calc(21.33% - 1px); /* 33.33% width with 10px spacing */
     margin: 1px;
-    margin-left: 65px;
+    margin-left: 45px;
     padding-inline: 60px;
     border-radius: 10px;
     text-align: center;
@@ -443,7 +443,7 @@ a.resume-link:hover {
     margin-top: 20px;
     padding: 10px 20px;
     box-shadow: 0 0 5px 1px #f9acac;
-    background-color: #3c0303;
+    background-color: #100101;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
