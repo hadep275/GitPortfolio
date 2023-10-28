@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <audio id="night-audio" src="audio/night_audio.m4a" preload="auto"></audio>
+
     <title>Your portfolio</title>
 </head>
 <body>
@@ -187,7 +189,14 @@
             Check out my latest blog posts for insights into web development, coding tips, and more. Stay updated with my thoughts on the ever-evolving world of technology.
         </p>
     </section>
-
+    <div class="dark-mode-only">
+        <div class="audio-controls">
+            <button id="audio-play-pause">
+                <i class="fas fa-play audio-icon"></i>
+            </button>
+            <span class="audio-label"></span>
+        </div>
+    </div>
     <a id="profile-link" href="https://github.com/hadep275" target="_blank">View My GitHub Profile</a>
     
     <script src="script.js"></script> 

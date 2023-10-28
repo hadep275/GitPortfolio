@@ -467,16 +467,37 @@ a.resume-link:hover {
     border-top: 10px solid #007bff; /* Arrow color */
 }
 
+/* Add this CSS for the dark mode audio controls */
+.dark-mode-only {
+    display: none;
+}
 
+body.dark-mode .dark-mode-only {
+    display: block;
+}
 
+.audio-controls {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
+.audio-controls button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 24px;
+}
 
-
-
-
-
-
-
-
-
-
+.audio-label {
+    color: #fff;
+    font-size: 20px;
+}
