@@ -56,9 +56,9 @@ body.dark-mode {
     border-radius: 50%;
     background: linear-gradient(-2000deg, transparent 20%, rgb(235, 234, 232) 10%, #f9acac 20%, transparent 40%);
     animation: shooting 15s cubic-bezier(0.45, 0.2, 0.95, 5) infinite;
-}
+} */
 
-@keyframes shooting {
+/* @keyframes shooting {
     0% {
         left: 100%;
         opacity: 1;
@@ -103,7 +103,7 @@ body.dark-mode {
     z-index: 1000; 
     background-color: transparent;
     color: #ffffff;
-    font-size: 28px;
+    font-size: 34px;
     text-decoration: none;
     padding: 0px 0px;
     border-radius: 0px;
