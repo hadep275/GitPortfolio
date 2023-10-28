@@ -86,7 +86,7 @@ body.dark-mode {
 .moon {
     position: inherit;
     top: 90px; /* Adjust the vertical position as needed */
-    left: 700px; /* Adjust the horizontal position as needed */
+    left: 400px; /* Adjust the horizontal position as needed */
     width: 30px; /* Adjust the moon size as needed */
     height: 30px; /* Keep it the same size for a full moon */
     z-index: -999;
