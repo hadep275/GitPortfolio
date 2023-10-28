@@ -242,13 +242,14 @@ a.resume-link:hover {
 .skill-category {
     width: calc(21.33% - 1px); /* 33.33% width with 10px spacing */
     margin: 1px;
+    margin-left: 65px;
     padding-inline: 60px;
     border-radius: 10px;
     text-align: center;
 }
 
 .skill-category h3 {
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     align-items: center;
 }
@@ -259,7 +260,7 @@ a.resume-link:hover {
 }
 
 .skill-category ul li {
-    margin: 0;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     font-size: 30px;
@@ -272,7 +273,7 @@ a.resume-link:hover {
     padding: 5px 5px;
     margin-left: 5px;
     border-radius: 5px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 1px;
     text-align: center;
@@ -441,7 +442,8 @@ a.resume-link:hover {
     text-align: center;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #02070c;
+    box-shadow: 0 0 5px 1px #f9acac;
+    background-color: #3c0303;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -454,20 +456,20 @@ a.resume-link:hover {
 
 #scroll-down-button {
     position: fixed;
-    right: 20px; /* Adjust the right position as needed */
-    bottom: 20px; /* Adjust the bottom position as needed */
+    right: 20px; /* Right position*/
+    bottom: 20px; /* Bottom position*/
     cursor: pointer;
 }
 
 .arrow-down {
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 10px solid #007bff; /* Arrow color */
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid transparent /* Arrow color */
 }
 
-/* Add this CSS for the dark mode audio controls */
+/* Dark mode audio controls */
 .dark-mode-only {
     display: none;
 }
@@ -483,8 +485,8 @@ body.dark-mode .dark-mode-only {
     padding: 10px;
     border-radius: 10px;
     position: fixed;
-    bottom: 70px;
-    right: 36px;
+    bottom: 60px;
+    right: 27px;
 }
 
 .audio-controls button {

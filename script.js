@@ -2,7 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.body;
     const modeToggle = document.getElementById("mode-toggle");
     const sky = document.querySelector(".sky");
-
+    const nightAudio = document.getElementById("night-audio");
+    const audioPlayPause = document.getElementById("audio-play-pause");
+    let audioPlaying = false;
+    
     // Check if the user has a preference for light or dark mode
     const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
     body.classList.toggle("dark-mode", prefersDarkMode);
@@ -21,12 +24,27 @@ document.addEventListener("DOMContentLoaded", function () {
             star.style.top = `${positionY}px`;
             star.style.left = `${positionX}px`;
             sky.appendChild(star);
+            createStar(sky);
         }
+    }
+
+    // Function to play or pause the audio
+    function toggleAudio() {
+        if (audioPlaying) {
+            nightAudio.pause();
+            audioPlayPause.innerHTML = '<i class="fas fa-play audio-icon"></i>';
+        } else {
+            nightAudio.play();
+            nightAudio.loop = true; // Make the audio loop
+            audioPlayPause.innerHTML = '<i class="fas fa-pause audio-icon"></i>';
+        }
+        audioPlaying = !audioPlaying;
     }
 
     // Add stars when dark mode is initially enabled
     if (body.classList.contains("dark-mode")) {
         addStars();
+        toggleAudio();
     }
 
     modeToggle.addEventListener("click", function () {
@@ -45,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     });
+    audioPlayPause.addEventListener("click", toggleAudio);
 });
 
 
