@@ -26,6 +26,18 @@ You can view the live demo of this portfolio at [Your Portfolio Demo](https://ha
 - Firebase
 - Formspree for contact form
 
+### Features and Styling
+
+- Stylish dark and light mode toggle for an enhanced user experience.
+- Starry night background with a moon animation for an atmospheric touch.
+- Navigation bar with links to different sections of the portfolio.
+- Author's profile section with links to GitHub and LinkedIn profiles.
+- Skills section highlighting proficiency in various web development technologies.
+- Projects section showcasing a range of web development projects with project descriptions and view links.
+- Contact form with a serverless backend using Formspree for easy communication.
+- Blog section for sharing insights and thoughts on web development and technology.
+- Full responsive design for different screen sizes.
+
 ## Author
 
 - [hadep275](https://github.com/hadep275)
