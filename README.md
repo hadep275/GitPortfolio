@@ -14,7 +14,8 @@ This is a portfolio website showcasing your diverse skill set and education in w
 
 ### Deployed Link / Live Demo
 
-You can view the live demo of this portfolio at [Your Portfolio Demo](https://example.com).
+You can view the live demo of this portfolio at [Your Portfolio Demo](https://hadep275.github.io/GitPortfolio/
+).
 
 ### Technologies Used
 
@@ -27,7 +28,7 @@ You can view the live demo of this portfolio at [Your Portfolio Demo](https://ex
 
 ## Author
 
-- [Your Name](https://github.com/yourgithubusername)
+- [hadep275](https://github.com/hadep275)
 
 ## License
 
